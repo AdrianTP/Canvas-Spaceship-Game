@@ -1,0 +1,62 @@
+<?xml version='1.0' ?>
+<weapons>
+	
+	<weapon id='template'>
+		
+		<name>Template</name>
+		
+		<graphics>
+			
+			<store>
+				
+				<filepath>./img/ships/template/template.png</filepath>
+				<x_size>384</x_size>
+				<y_size>384</y_size>
+				<num_frames_x>6</num_frames_x>
+				<num_frames_y>6</num_frames_y>
+				<x_frame_size>64</x_frame_size>
+				<y_frame_size>64</y_frame_size>
+				
+			</store>
+			
+		</graphics>
+		
+		<special bool='true'><!--if point-defence weapon-->
+			
+			<weapon id='1'>32</weapon>
+			
+		</special>
+		
+		<tracking>
+			
+			<turret bool='true'></turret><!--inaccuracy when aiming-->
+			
+		</tracking>
+		
+		<ammunition bool='true'><!--false if beam or energy weapon-->
+			
+			<ammo id='1'></ammo><!--can use multiple ammo types-->
+			<ammo id='2'></ammo>
+			
+		</ammunition>
+		
+		<defence bool='true'>
+			
+			<shield>1000</shield>
+			<armour>800</armour>
+			<ion>500</ion>
+			
+		</defence>
+		
+		<drain><!--resources expended in use of weapon-->
+			
+			<power>100</power><!--total power drain to use weapon-->
+			<fuel>10</fuel><!--fuel drain per shot-->
+			<cargo>0</cargo><!--cargo space required in tons-->
+			<weap>5</weap><!--weapons space required in tons-->
+			
+		</drain>
+		
+	</weapon>
+	
+</weapons>

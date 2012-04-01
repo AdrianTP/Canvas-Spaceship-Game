@@ -1,0 +1,92 @@
+<?xml version='1.0' ?>
+<ships>
+	
+	<ship id='template'>
+		
+		<name>Template</name>
+		
+		<collision bool='true'>
+			<square>
+				<x_size>64</x_size>
+				<y_size>64</y_size>
+			</square>
+			<circle>
+				<radius>32</radius>
+			</circle>
+		</collision>
+		
+		<graphics>
+			
+			<game>
+				<filepath>./img/ships/template/template.png</filepath>
+				<x_size>384</x_size>
+				<y_size>384</y_size>
+				<num_frames_x>6</num_frames_x>
+				<num_frames_y>6</num_frames_y>
+				<x_frame_size>64</x_frame_size>
+				<y_frame_size>64</y_frame_size>
+				<turn_increment>10</turn_increment>
+			</game>
+			
+			<store>
+				<filepath>./img/ships/template/template.png</filepath>
+				<x_size>384</x_size>
+				<y_size>384</y_size>
+				<num_frames_x>6</num_frames_x>
+				<num_frames_y>6</num_frames_y>
+				<x_frame_size>64</x_frame_size>
+				<y_frame_size>64</y_frame_size>
+			</store>
+			
+			<shape bool='false'>
+				<color>
+					<rgba>
+						<red>255</red>
+						<green>255</green>
+						<blue>255</blue>
+						<alpha>1.0</alpha>
+					</rgba>
+					<hex>#FFFFFF</hex>
+				</color>
+				<vectors></vectors><!--moveTo = (x,y) / lineTo = [x,y]-->
+				<turn_increment>1</turn_increment>
+			</shape>
+			
+		</graphics>
+		
+		<weapons bool='true'>
+			
+			<weapon id='1'>12</weapon>
+			<weapon id='2'>13</weapon>
+			<weapon id='3'>22</weapon>
+			<weapon id='4'>64</weapon>
+			
+		</weapons>
+		
+		<outfits bool='true'>
+			
+			<outfit id='1'>32</outfit>
+			<outfit id='2'>17</outfit>
+			
+		</outfits>
+		
+		<stats>
+			
+			<max_speed>5</max_speed>
+			<acceleration>0.1</acceleration>
+			<turn_speed>180</turn_speed><!--degrees/sec-->
+			
+			<shield>1000</shield>
+			<armour>800</armour>
+			<ion>500</ion>
+			
+			<power>1000</power><!--used to power weapons and outfits-->
+			<fuel>500</fuel><!--100 fuel per jump-->
+			<cargo>30</cargo><!--in tons-->
+			<weap>25</weap><!--in tons-->
+			
+		</stats>
+		
+	</ship>
+	
+</ships>

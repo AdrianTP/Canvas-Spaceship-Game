@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas Stars</title>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+		<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> 
+		<link rel='stylesheet' type='text/css' href='./css/style.css' />
+	</head>
+	<body>
+		<div id='buttons'>
+			<button id='debug_button'>Debug</button>
+			<button id='start'>Start</button>
+			<button id='stop'>Stop</button>
+		</div>
+		<div id='chat'>
+			<div id='chat_header'><h3>Communications</h3></div>
+			<div id='chat_contents'></div>
+			<div id='chat_input'><input type='text' id='chat_box'/><div class='button' id='chat_button'><a href='#'>Send</a></div></div>
+		</div>
+		<div id='map'>
+			<div id='map_header'><h3>Galactic Map</h3></div>
+			<div id='map_body'>
+				<div id='map_area'>
+					<div class='map_item'></div>
+				</div>
+				<div id='map_info'></div>
+			</div>
+			<div id='map_footer'></div>
+		</div>
+		<div id='debug'>
+			<table>
+				<tr><th colspan='5'>Ship</th></tr>
+				<tr><td>Turn:</td><td><span id='turn'>none</span></td><td>Facing:</td><td><span id='angle'>0</span></td></tr>
+				<tr><td>Thrust:</td><td><span id='thrust'>none</span></td><td>Speed:</td><td><span id='ship_speed'>0</span></td></tr>
+				<tr><td>Accel:</td><td><span id='accel'>none</span></td><td>% Max:</td><td><span id='accel_max'>0</span></td></tr>
+				<tr><td>System X:</td><td><span id='system_x'>0</span></td><td>System Y:</td><td><span id='system_y'>0</span></td></tr>
+				<tr><td>Moving:</td><td><span id='ship_angle'>0</span></td><td>...</td><td><span id=''>0</span></td></tr>
+			</table>
+			<table>
+				<tr><th colspan='5'>Stars</th></tr>
+				<tr><td>Angle:</td><td><span id='stars_angle'>0</span></td></tr>
+				<tr><td>Speed:</td><td><span id='stars_speed'>0</span></td></tr>
+				<tr><td>X Move:</td><td><span id='stars_dx'>0</span></td></tr>
+				<tr><td>Y Move:</td><td><span id='stars_dy'>0</span></td></tr>
+			</table>
+			<table>
+				<tr><th colspan='5'>Keyboard</th></tr>
+				<tr><td>Left:</td><td><span id='left'>0</span></td></tr>
+				<tr><td>Right:</td><td><span id='right'>0</span></td></tr>
+				<tr><td>Up:</td><td><span id='up'>0</span></td></tr>
+				<tr><td>Down:</td><td><span id='down'>0</span></td></tr>
+				<tr><td>Esc:</td><td><span id='esc'>0</span></td></tr>
+				<tr><td>Enter:</td><td><span id='enter'>0</span></td></tr>
+				<tr><td>Space:</td><td><span id='space'>0</span></td></tr>
+			</table>
+			<table>
+				<tr><th colspan='5'>Speeds</th></tr>
+				<tr><td>x_accel:</td><td><span id='x_accel'>0</span></td></tr>
+				<tr><td>y_accel:</td><td><span id='y_accel'>0</span></td></tr>
+				<tr><td>max_x:</td><td><span id='max_x'>0</span></td></tr>
+				<tr><td>max_y:</td><td><span id='max_y'>0</span></td></tr>
+			</table>
+		</div>
+		<div id='page'>
+			<div id='sidebar'>
+				<div id='radar'>radar<br />Valid keys to press: arrows, M, Y, esc</div>
+			</div>
+			<div id='frame'>
+				<div id='levels'>
+					<div id='shield'>
+							<span class='name'>shield</span>
+							<div id='shield_prog'></div>
+						</div>
+						<div id='armour'>
+							<span class='name'>armour</span>
+							<div id='armour_prog'></div>
+						</div>
+						<!--<div id='ion'>
+							<span class='name'>ionisation</span>
+							<div id='ion_prog'></div>
+						</div>-->
+						<div id='fuel'>
+							<span class='name'>fuel</span>
+							<div id='fuel_prog'></div>
+						</div>
+				</div>
+				<!--<canvas id='stage' width='600' height='600'></canvas>-->
+				<div id='amounts'>
+					<div id='cargo'>cargo: <span id='cargo_val'></span></div>
+					<div id='credits'>credits: <span id='credits_val'></span></div>
+				</div>
+			</div>
+			<div id='panel'>
+				<div id='target'>target</div>
+				<div id='list'>list</div>
+			</div>
+		</div>
+	</body>
+	<script type='text/javascript' src='./js/globals.js'></script>
+	<!--[if IE]><script type="text/javascript" src="http://adrian.thomas-prestemon.com/libs/excanvas/excanvas.js"></script>
+	<script type='text/javascript' src='./js/excanvashelper.js'></script><![endif]-->
+	<script type='text/javascript' src='./js/events.js'></script>
+	<script type='text/javascript' src='./js/shortcut.js'></script>
+	<script type='text/javascript' src='./js/my_lib.js'></script>
+	<script type='text/javascript' src='./js/input.js'></script>
+	<script type='text/javascript' src='./js/stars.js'></script>
+	<script type='text/javascript' src='./js/ships.js'></script>
+	<script type='text/javascript' src='./js/system.js'></script>
+	<script type='text/javascript' src='./js/timer.js'></script>
+	<script type='text/javascript' src='./js/drag.js'></script>
+	<script type='text/javascript' src='./js/main.js'></script>
+	<script>
+		
+		Init();
+		
+	</script>
+</html>

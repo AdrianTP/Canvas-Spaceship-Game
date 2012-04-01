@@ -1,0 +1,151 @@
+<?xml version='1.0' ?>
+<ammunition>
+	
+	<ammo id='template'>
+		
+		<name>Template</name>
+		
+		<graphics>
+			
+			<store>
+				<filepath>./img/ships/template/template.png</filepath>
+				<x_size>384</x_size>
+				<y_size>384</y_size>
+				<num_frames_x>6</num_frames_x>
+				<num_frames_y>6</num_frames_y>
+				<x_frame_size>64</x_frame_size>
+				<y_frame_size>64</y_frame_size>
+			</store>
+			
+			<game>
+				
+				<filepath>./img/ships/template/template.png</filepath>
+				<x_size>384</x_size>
+				<y_size>384</y_size>
+				<num_frames_x>6</num_frames_x>
+				<num_frames_y>6</num_frames_y>
+				<x_frame_size>64</x_frame_size>
+				<y_frame_size>64</y_frame_size>
+				
+			</game>
+			
+			<shape>
+				
+				<color>
+					
+					<rgba>
+						
+						<red>255</red>
+						<green>255</green>
+						<blue>255</blue>
+						<alpha>1.0</alpha>
+						
+					</rgba>
+					
+					<hex>#FFFFFF</hex>
+					
+				</color>
+				
+				<vectors></vectors><!--moveTo = (x,y) / lineTo = [x,y]-->
+				
+			</shape>
+			
+		</graphics>
+		
+		<collision>
+			
+			<square>
+				
+				<x_size>4</x_size>
+				<y_size>4</y_size>
+				
+			</square>
+			
+			<circle>
+				
+				<radius>2</radius>
+				
+			</circle>
+			
+		</collision>
+		
+		<tracking>
+			
+			<seeking>false</seeking>
+			
+			<inaccuracy></inaccuracy>
+			
+			<movement>
+				
+				<max_speed>5</max_speed>
+				<acceleration>5</acceleration>
+				<turn_increment></turn_increment>
+				
+			</movement>
+			
+			<manoeuvreability>
+				
+				<turn_speed>180</turn_speed><!--degrees/sec / 0 if not manoeuvrable-->
+				
+			</manoeuvreability>
+			
+		</tracking>
+		
+		<weakness bool='true'><!--true/false able to be targeted by an outfit or weapon-->
+			
+			<outfit id='1'>32</outfit>
+			<outfit id='2'>17</outfit>
+			
+			<weapon id='1'></weapon>
+			<weapon id='2'></weapon>
+			
+		</weakness>
+		
+		<stats>
+			
+			<defence>
+				
+				<lifespan></lifespan><!--in seconds-->
+				<shield></shield>
+				<armour></armour>
+				<ion></ion>
+				
+			</defence>
+			
+			<damage>
+				
+				<shield></shield>
+				<armour></armour>
+				<ion></ion>
+				<impact></impact>
+				<range></range>
+				
+			</damage>
+			
+			<drain>
+				
+				<cycling>
+					
+					<shield></shield>
+					<armour></armour>
+					<ion></ion>
+					<fuel></fuel>
+					<impact></impact>
+					
+				</cycling>
+				
+				<storage>
+					
+					<power></power>
+					<cargo></cargo>
+					<weap></weap>
+					
+				</storage>
+				
+			</drain>
+			
+		</stats>
+		
+	</ammo>
+	
+</ammunition>

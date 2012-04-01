@@ -1,0 +1,57 @@
+<?xml version='1.0' ?>
+<weapons>
+	<weapon id='template'>
+		<name>Template</name>
+		
+		<graphics>
+			
+			<store>
+				
+				<filepath>./img/ships/template/template.png</filepath>
+				<x_size>384</x_size>
+				<y_size>384</y_size>
+				<num_frames_x>6</num_frames_x>
+				<num_frames_y>6</num_frames_y>
+				<x_frame_size>64</x_frame_size>
+				<y_frame_size>64</y_frame_size>
+				
+			</store>
+			
+		</graphics>
+		
+		<special bool='true'><!--if weapon defence, -->
+			
+			<weapon id='1'>32</weapon>
+			<weapon id='2'>17</weapon>
+			
+		</special>
+		
+		<mods bool='true'><!--bonuses or (if negative) costs associated with use of outfit-->
+			
+			<drains><!--resources expended or regenerated-->
+				
+				<shield></shield>
+				<armour></armour>
+				<ion></ion>
+				<fuel></fuel>
+				
+			</drains>
+			
+			<caps><!--increase or decrease maximum-->
+				
+				<max_speed></max_speed>
+				<acceleration></acceleration>
+				<shield></shield>
+				<armour></armour>
+				<ion></ion>
+				<power></power>
+				<fuel></fuel>
+				<cargo></cargo>
+				<weap></weap>
+				
+			</caps>
+			
+		</mods>
+		
+	</weapon>
+</weapons>

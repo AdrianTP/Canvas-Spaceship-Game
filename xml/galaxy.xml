@@ -1,0 +1,49 @@
+<?xml version='1.0' ?>
+<map>
+	<galaxy id='template'>
+		<system id='template'>
+			<name></name>
+			<x_size></x_size>
+			<y_size></y_size>
+			<x_pos></x_pos>
+			<y_pos></y_pos>
+			<interference></interference>
+			<asteroids></asteroids>
+			<spobs>
+				<spob id='template'>
+					<name></name>
+					<type></type>
+					<shape>
+						<square>
+							<x_size></x_size>
+							<y_size></y_size>
+						</square>
+						<circle>
+							<radius></radius>
+						</circle>
+					</shape>
+					<x_pos></x_pos>
+					<y_pos></y_pos>
+					<graphics bool='true'>
+						<filepath></filepath>
+						<x_size></x_size>
+						<y_size></y_size>
+						<animation bool='true'>
+							<x_frames></x_frames>
+							<y_frames></y_frames>
+							<fps></fps>
+						</animation>
+					</graphics>
+					<movement bool='true'>
+						<x_center></x_center>
+						<y_center></y_center>
+						<radius></radius>
+						<speed></speed>
+					</movement>
+				</spob>
+			</spobs>
+		</system>
+	</galaxy>
+	<galaxy id='01'>
+	</galaxy>
+</map>
